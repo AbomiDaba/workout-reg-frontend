@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchWorkouts = async () => {
-            const response = await fetch('https://workout-reg-backend-production.up.railway.app/', {
+            const response = await fetch('https://workout-reg-backend-production.up.railway.app', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
