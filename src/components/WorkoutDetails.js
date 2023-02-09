@@ -12,7 +12,7 @@ function WorkoutDetails({workout}) {
             return
         }
         console.log('user:',user)
-        const response = await fetch(`http://localhost:5000/workouts/${workout._id}`, {
+        const response = await fetch(`https://workout-reg-backend-production.up.railway.app/workouts/${workout._id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`        
