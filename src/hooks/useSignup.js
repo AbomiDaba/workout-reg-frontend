@@ -10,7 +10,7 @@ export const useSignup = () => {
         setIsLoading(true)
         setError(null)
         
-        const response = await fetch('https://workout-reg-backend-production.up.railway.app/user', {
+        const response = await fetch('https://workout-reg-backend-production.up.railway.app/user/signup', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
